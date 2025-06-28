@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tube</title>
+  <style>
+    body {
+      background-color: #d95c5c;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin: 10px 0;
+    }
+
+    .container {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .main-video {
+      width: 70%;
+      float: left;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .side-videos {
+      width: 25%;
+      float: right;
+      padding: 10px;
+    
+    }
+
+    .side-videos img{
+      margin-bottom: 15px;
+      border: 2px solid black;
+      width: 100%;
+      height: 200px;
+     
+    }
+
+    .side-videos p {
+      margin: 5px 0;
+    }
+
+    .comment-box {
+      margin: 30px;
+      color: white;
+    }
+
+    .comment-box textarea {
+      width: 80%;
+      height: 200px;
+      box-sizing: border-box;
+    }
+
+    .comment-box button {
+      margin-top: 10px;
+      padding: 5px 15px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Tube</h1>
+
+  <div class="container">
+    <!-- Main Video Area -->
+    <div class="main-video">
+
+      <!-- You can duplicate this file and change the iframe src manually for other pages -->
+      <iframe name="main-video" width="800" height="500" src="https://www.youtube.com/embed/XTp5jaRU3Ws?si=r_V7jICxSmQ04Ori"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <!-- Comment Section -->
+      
+      <div class="comment-box">
+        <label for="comment"><b>Enter a comment..</b></label><br><br>
+        <textarea id="comment" placeholder="Write your comment here..."></textarea>
+        <br>
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <!-- Side Videos as Links -->
+    <div class="side-videos">
+      
+      <a href="https://www.youtube.com/embed/5ZKLM5pNoGQ?si=gO_RGvdXq01D9CfI" target="main-video">
+        <img src="images/img1.jpg" alt="video1">
+      </a>
+      <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+      
+      <a href="https://www.youtube.com/embed/SJzhhWdJ5kw?si=WkMlzeYB3V-T5E_6" target="main-video">
+         <img src="images/img2.jpg" alt="video2">
+      </a>
+      <p><b>Lorem ipsum dolor sit.</b></p>
+
+      <a href="https://www.youtube.com/embed/g-Ij0idc_dk?si=xb5cSUlK6VJYqMHM" target="main-video">
+        <img src="images/img3.jpg" alt="video3">
+      </a>
+      <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+      
+      <a href="https://www.youtube.com/embed/TU1HQnU_9ME?si=NjGeWm2-wjigbG2f"  target="main-video" >
+         <img src="images/img4.jpg" alt="video4">
+      </a>
+      <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+      
+    </div>
+  </div>
+</body>
+</html>
