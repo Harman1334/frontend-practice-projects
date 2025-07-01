@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Portfolio</title>
+  
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<header>
+<!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+</header>
+<!-- HERO SECTION -->
+<section class="hero container-fluid" id="home">
+    <h1 class="bounce-in">Hi, I am <br>Harman</h1><br>
+        <p class="mt-3">I’m a passionate student and aspiring full-stack web developer.I love building clean, user-friendly websites using HTML, CSS, JavaScript, and more.Currently learning web development and building real-world projects.</p>
+        <br>
+        <div class="mt-3 text-light">"Learning to build. Building to learn."</div>
+
+        <a href="#contact" class="btn btn-custom mt-3">Contact Me</a>
+  
+        <div class="social-icons mt-4">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="container-fluid" id="about">
+  <h2 class="section-title ">About Me</h2>
+    <div class="row align-items-center text-center text-md-start px-4">
+        <div class="col-md-3 " >
+
+            <img src="images/about.png" class="zoom-in img-fluid rounded-circle" alt="Profile" width="250px">
+        </div>
+        <div class="col-md-8 p-4">
+          <p>I am a student with a strong interest in web development and technology. I have been building projects using HTML, CSS, JavaScript, and backend technologies like PHP and MySQL. I enjoy learning new frameworks, building creative UI designs, and solving problems through code. My goal is to grow as a full-stack developer and contribute to real-world projects.I enjoy exploring new frameworks and tools like Bootstrap, React, PHP, and MySQL.  
+          I’m currently building projects to improve my skills and create a portfolio that reflects my learning journey.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+  <section class="container-fluid text-center" id="skills">
+      <h2 class="section-title">Skills</h2>
+       <div class="d-flex flex-wrap justify-content-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="skill-logo" alt="HTML">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="skill-logo" alt="CSS">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="skill-logo"alt="JavaScript">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="skill-logo" alt="React">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" class="skill-logo" alt="PHP">
+          <img src="https://cdn-icons-png.flaticon.com/512/528/528260.png" class="skill-logo" alt="MySQL">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="skill-logo" alt="Python">
+       </div>
+  </section>
+
+<!-- PROJECTS SECTION -->
+<section class="container-fluid" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 px-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/c1.jpg" class="card-img-top" alt="Table Reservation" height="250px">
+        <div class="card-body">
+          <h5 class="card-title">Table Reservation System</h5>
+          <p class="card-text">An online platform for booking restaurant tables. Built with PHP, MySQL, and Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/c2.jpeg" class="card-img-top" alt="Employee Leave"  height="250px">
+        <div class="card-body">
+          <h5 class="card-title">Employee Leave Management</h5>
+          <p class="card-text">A system to manage employee leave applications with approval flow.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/c3.jpg" class="card-img-top" alt="Ambulance Project"  height="250px">
+        <div class="card-body">
+          <h5 class="card-title">Emergency Ambulance Hiring</h5>
+          <p class="card-text">A fast emergency ambulance booking platform with real-time tracking functionality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="container-fluid mt-5 mb-5 " id="contact" >
+  <h2 class="section-title">Contact Me</h2>
+  <form class=" contact-form mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Write your message..."></textarea>
+        </div>
+      <button type="submit" class="btn btn-custom w-100">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class=" pb-2 mt-5 border-top text-center ">
+  <p > Copyright &copy; My Portfolio 2025</p>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
