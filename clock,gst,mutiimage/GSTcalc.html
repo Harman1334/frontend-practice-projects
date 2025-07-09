@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Calculator with Discount</title>
+</head>
+<body>
+
+  <h2>GST Calculator</h2>
+
+  <label>Enter your name:</label><br>
+  <input id="name"><br><br>
+  <button onclick="printName()">Print Name</button>
+  <div id="res"></div>
+
+  <br><br><hr>
+
+  <label>Enter amount:</label><br>
+  <input id="amt"><br><br>
+  <button onclick="calculateGst()">Calculate GST</button>
+
+  <div id="gst-result" style="margin-top:20px;"></div>
+
+
+  <script>
+    function printName(){
+    let name=document.getElementById("name").value
+    document.getElementById("res").innerHTML=name
+}
+
+function calculateGst(){
+    let amt = document.getElementById("amt").value
+    console.log(amt);
+    let discount = 0
+    if(amt >= 1000){
+        discount = 10
+    } else if(amt < 1000 && amt > 500){
+        discount = 5
+    } else {
+        discount = 0
+    }
+    console.log("discount is :", discount)
+    let discountAmt = amt * discount / 100 
+    console.log(discountAmt)
+    let amtAfterDiscount = amt - discountAmt 
+    console.log("Amt after discount :", amtAfterDiscount);
+    let gst = amtAfterDiscount * 18 / 100
+    console.log("Gst is:", gst)
+    let total = Math.round(amtAfterDiscount + gst) 
+    console.log("total is :", total);
+    
+    document.getElementById("gst-result").innerHTML = `Amount entererd : ${amt} <br> Discount Percentage: ${discount} <br> Discounted Amount: ${amtAfterDiscount}<br> Gst is: ${gst} <br> Total: ${total}`
+}
+
+  </script>
+</body>
+</html>

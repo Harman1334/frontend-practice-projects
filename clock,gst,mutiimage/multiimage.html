@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Image</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 1000px;
+            border: 5px red solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px;
+            
+        }
+        .img1{
+            position: absolute;
+            top: 150px;
+            justify-content: center;
+            align-items: center;
+        }
+        .images{
+    
+            display: flex;
+            margin-top: 150px;
+            gap: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img1">
+            <img src="images/pic1.jpg" height="150px" width="250px" id="img" alt="img1">
+        </div>
+        <br><br>
+        <div class="images">
+            <div class="img2">
+            <img src="images/pic2.jpg" onmouseover="changeImg()" onmouseout="changeImg3" height="150px" width="250px" id="img1" alt="img2">
+            </div>
+            <div class="img3">
+            <img src="images/pic3.jpg" onmouseover="changeImg1()" onmouseout="changeImg3" height="150px" width="250px" id="img2" alt="img3">
+            </div>
+            <div class="img4">
+            <img src="images/pic4.jpg" onmouseover="changeImg2()" onmouseout="changeImg3" height="150px" width="250px" id="img3" alt="img4">
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImg(){
+            document.getElementById("img").src=`images/pic2.jpg`;
+        }
+        function changeImg1(){
+            document.getElementById("img").src=`images/pic3.jpg`;
+        }
+        function changeImg2(){
+            document.getElementById("img").src=`images/pic4.jpg`;
+        }
+        function changeImg3(){
+            document.getElementById("img").src=`images/pic1.jpg`;
+        }
+    </script>
+</body>
+</html>

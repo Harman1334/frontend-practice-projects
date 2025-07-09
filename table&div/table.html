@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <label>Enter number</label>
+    <input id="num"><br><br>
+    <label>Enter start number</label>
+    <input id="start"><br><br>
+    <label>Enter end number</label>
+    <input id="end"><br><br>
+
+    <button onclick= "printnum()">Submit</button>
+    <div id="output"></div>
+     <script>
+        function printnum(){
+            let num=Number(document.getElementById("num").value)    
+            console.log(num);
+            let start=Number(document.getElementById("start").value)    
+            console.log(start);
+            let end=Number(document.getElementById("end").value)    
+            console.log(end);
+            
+            for(let i=start;i<=end;i++ ){
+                document.getElementById("output").innerHTML+=`<br>${num}*${i}=${num*i}`
+            }
+        }
+     </script>
+</body>
+</html>
