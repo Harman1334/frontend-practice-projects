@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST and BMI Calculator</title>
+</head>
+<body>
+  <h1>GST and BMI Calculator</h1>
+
+  <script>
+    //  GST Calculator
+    let amount = parseFloat(prompt("Enter the amount:"));
+    console.log("Amount is",amount);
+    let discount = 0;
+    if (amount > 1000) {
+      discount = 10;
+    } else if (amount >= 500) {
+      discount = 5;
+    }else{
+      discount=0;
+    }
+    console.log("---- GST Calculator ----");
+    console.log("Discount is ", discount);
+    let discountAmount = amount * (discount / 100);
+    console.log("Discount percentage is ",discountAmount);
+    let discountedPrice = amount - discountAmount;
+    console.log("Discount is amount",discountedPrice);
+    let gst = discountedPrice * 0.18;
+     console.log("GST is",gst);
+    let total = discountedPrice + gst;
+    console.log("Total amount is",total);
+  
+   
+
+    // BMI Calculator
+    //Create a prompt to ask height and weight of user
+    let weight = parseFloat(prompt("Enter your weight in kg:"));
+    let height = parseFloat(prompt("Enter your height in meters:"));
+
+    let bmi = weight / (height * height)*10000;
+    console.log("---- BMI Calculator ----");
+    console.log("Your BMI is: " ,bmi);
+
+    if (bmi < 18.5) {
+      console.log("Category: Underweight");
+    } else if (bmi < 24.9) {
+      console.log("Category: Normal weight");
+    } else if (bmi < 29.9) {
+      console.log("Category: Overweight");
+    } else {
+      console.log("Category: Obesity");
+    }
+  </script>
+</body>
+</html>

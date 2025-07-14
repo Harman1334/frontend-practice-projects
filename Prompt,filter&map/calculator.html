@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+<body>
+
+  <h1>Simple Prompt-Based Calculator</h1>
+  <button onclick="calculate()">Start Calculator</button>
+
+  <script>
+    function calculate() {
+      let num1 = parseFloat(prompt("Enter first number:"));
+      let num2 = parseFloat(prompt("Enter second number:"));
+      let operator = prompt("Enter operator (+, -, *, /):");
+
+      let result;
+
+      if (operator === "+") {
+        result = num1 + num2;
+      } else if (operator === "-") {
+        result = num1 - num2;
+      } else if (operator === "*") {
+        result = num1 * num2;
+      } else if (operator === "/") {
+        result = num1 / num2;
+      } else {
+        result = "Invalid operator!";
+      }
+
+      alert("Result: " + result);
+    }
+  </script>
+
+</body>
+</html>
