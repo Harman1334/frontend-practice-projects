@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI DatePicker and Dialog Box</title>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // DatePicker
+            $("#datepicker").datepicker();
+
+            // Dialog Box
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true
+            });
+
+            // Button click event
+            $("#openDialog").click(function () {
+                $("#dialog").dialog("open");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Simple Webpage using jQuery UI</h2>
+
+    <label>Select Date:</label>
+    <input type="text" id="datepicker">
+
+    <br><br>
+
+    <button id="openDialog">Open Dialog Box</button>
+
+    <div id="dialog" title="jQuery UI Dialog">
+        <p>This is a dialog box created using jQuery UI.</p>
+    </div>
+
+</body>
+</html>
