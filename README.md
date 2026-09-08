@@ -1,2 +1,2 @@
-# 45daystraining
+# frontend-practice-projects
 reactfirebase
